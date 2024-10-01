@@ -2,6 +2,7 @@
 
 This project is a **step-tracking application** that counts steps in a video by detecting and analyzing the motion of the right and left ankles. The system uses **MediaPipe's Pose Estimation** module to detect body landmarks and track leg movement to count the steps accurately.
 
+![steps_tracker](https://github.com/user-attachments/assets/0e8a82a3-46a8-4a4b-9b23-381ace20c56a)
 
 
 ## Features
@@ -91,10 +92,6 @@ The step-tracking algorithm works by identifying the movement of the ankles. Spe
 1. **Detects Pose Landmarks**: Using MediaPipe's Pose Estimation to get landmarks, focusing on the right and left ankles.
 2. **Step Detection Logic**: The system checks the vertical positions of the ankles to detect when one ankle moves above the other, indicating a step.
 3. **Counting Steps**: A step is counted when one ankle moves above the other, updating the step count and stage (whether it's the right or left leg stepping up).
-
-## Contributing
-
-Contributions are welcome! If you have ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
 ## References
 1. [MediaPipe's article on Pose Landmarks detection](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker)
