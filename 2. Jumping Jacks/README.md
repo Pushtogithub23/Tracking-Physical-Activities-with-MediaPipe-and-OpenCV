@@ -2,10 +2,12 @@
 
 This project implements a jumping jacks counter using the MediaPipe pose estimation module integrated with OpenCV. The script detects body landmarks, calculates the angles between key joints (shoulder, hip, elbow), and counts repetitions of the jumping jacks based on arm movements.
 
+![jumping_jacks_count (1)](https://github.com/user-attachments/assets/105a2971-6171-408a-a951-8b2b70cfe2bf)
+
 ## Features
 
 - **Pose Estimation**: Uses MediaPipe Pose to detect body landmarks and estimate body pose in real-time.
-- **Repetition Counting**: Calculates the angle formed by key joints to determine when the arms are in the "up" or "down" position, and counts a repetition when the arms go from "down" to "up".
+- **Repetition Counting**: Calculates the angle formed by key joints to determine when the arms are in the "up" or "down" position and counts a repetition when the arms go from "down" to "up".
 - **Dynamic Visualization**: Displays the count of repetitions and the current angle of the arms on the video in real-time.
 - **Video Processing**: The input video is processed, annotated, and saved as a new output file showing the count and angle calculations.
 
