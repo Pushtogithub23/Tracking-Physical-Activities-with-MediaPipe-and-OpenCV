@@ -2,6 +2,9 @@
 
 This project utilizes computer vision to count the number of bench press repetitions in a video using a pose estimation model. The program detects the position of key body landmarks (elbows and shoulders) and counts repetitions based on the movement of the elbow relative to the shoulder.
 
+![bench_press_counter](https://github.com/user-attachments/assets/43f4f218-7f08-47eb-a34b-e0fcaa01db61)
+
+
 ## Features
 
 - Detects and tracks the user's pose during a bench press.
@@ -69,10 +72,6 @@ python main.py
 - **Landmark Detection**: The script uses key body landmarks for counting repetitions. You can adjust the detection logic if working with different exercises.
 - **Thresholds**: The thresholds for detecting "up" and "down" positions can be adjusted in the `update_count_and_color()` function based on your requirements.
 
-## Example
-
-Below is an example of a video frame with the rep counter and state display:
-![Screenshot (649)](https://github.com/user-attachments/assets/0d3f9ec7-0929-407c-a6e0-dc5b62a93ccd)
 
 ## References
 1. [MediaPipe's article on Pose Landmarks Detection](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker)
