@@ -1,6 +1,9 @@
 # Squat Repetition Counter Using MediaPipe's Pose Estimation
 
-This project uses computer vision and pose estimation to track and count squat repetitions in a video. It calculates joint angles such as the knee and hip angles to identify the up and down stages of a squat. The program displays the current rep count and joint angles on the video and saves the processed output.
+This project uses computer vision and pose estimation to track and count squat repetitions in a video. It calculates joint angles, such as the knee and hip angles, to identify the up and down stages of a squat. The program displays the current rep count and joint angles on the video and saves the processed output.
+
+![count_squats](https://github.com/user-attachments/assets/1cf53587-d4c0-4e25-bc47-a53987e7aa14)
+
 
 ## Features
 
@@ -68,15 +71,8 @@ python main.py
 ## Customization
 
 - **Input video**: Modify the path to the input video if you want to analyze a different file.
-- **Joint Angle Thresholds**: You can adjust the angle thresholds for identifying the up and down stages of the squat in the `update_count_and_color_by_angle()` function.
+- **Joint Angle Thresholds**: You can adjust the angle thresholds to identify the up and down stages of the squat in the `update_count_and_color_by_angle()` function.
 - **Landmarks**: The current implementation tracks the right side of the body (right shoulder, hip, knee, and ankle). You can extend this to track both sides if needed.
-
-## Example Output
-
-Below is an example of a video frame showing the squat count and joint angles:
-
-![image](https://github.com/user-attachments/assets/ee3d4211-d1b3-4226-9281-d7aaa09c83a5)
-
 
 ## References
 1. [MediaPipe's article on Pose Landmarks Detection](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker)
