@@ -3,6 +3,9 @@
 
 This project implements a dumbbell curl counter using OpenCV and MediaPipe for pose detection. The code analyzes video input to detect body landmarks, calculates the angles of the arms, and counts the number of repetitions based on the position of the arms. The output is a video annotated with the count of repetitions and angle measurements.
 
+![side_curl_counter](https://github.com/user-attachments/assets/a8927277-f34e-468a-8e1d-671e36dffc05)
+
+
 ## Features
 
 - Real-time pose detection and angle calculation using MediaPipe.
