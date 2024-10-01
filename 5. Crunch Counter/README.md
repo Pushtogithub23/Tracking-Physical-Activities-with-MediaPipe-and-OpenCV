@@ -3,6 +3,9 @@
 
 This project utilizes OpenCV and MediaPipe to count crunches performed in a video. The program processes video input, detects body landmarks, and calculates angles to determine the count of crunches. It visualizes the exercise count and angles on the video feed and saves the output to a new video file.
 
+![crunches_counter](https://github.com/user-attachments/assets/8195bd7e-4ea7-4443-8924-a9780856f3ee)
+
+
 ## Features
 
 - Pose detection and angle calculation using MediaPipe.
