@@ -52,7 +52,7 @@ The script processes an input video, performs pose detection on each frame, and 
 2. **Running the Script**: Run the script to process the input video and generate an annotated output.
 
 ```bash
-python jumping_jacks_counter.py
+python jumping_jacks.py
 ```
 
 3. **Output**: The processed video with the annotated count and angles will be saved in the `VIDEOS/OUTPUTS/` directory.
@@ -66,7 +66,7 @@ python jumping_jacks_counter.py
 ### Example Usage
 
 ```python
-python jumping_jacks_counter.py
+python jumping_jacks.py
 ```
 
 This will process the input video (`jumping_jacks.mp4`) and save the result with the jump counts as `jumping_jacks_count.mp4` in the `VIDEOS/OUTPUTS/` directory.
