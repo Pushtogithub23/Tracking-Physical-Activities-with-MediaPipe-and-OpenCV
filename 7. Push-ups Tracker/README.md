@@ -38,14 +38,14 @@ pip install opencv-python numpy mediapipe
 │       └── push-ups_counter.mp4
 ├── utils.py
 ├── Pose_estimationModule.py
-└── pushup_jump_counter.py
+└── pushups_tracker.py
 ```
 
 - `VIDEOS/INPUTS`: Place your input video files here.
 - `VIDEOS/OUTPUTS`: The output video with counted exercises will be saved here.
 - `utils.py`: Contains utility functions for drawing text on the video frames.
 - `Pose_estimationModule.py`: Wraps the MediaPipe pose estimation module to detect and draw body landmarks.
-- `pushup_jump_counter.py`: Main script to run the push-up and jump counting application.
+- `pushups_tracker.py`: The main script runs the push-up and jump-counting application.
 
 ## Usage
 
@@ -53,7 +53,7 @@ pip install opencv-python numpy mediapipe
 2. Run the script:
 
 ```bash
-python pushup_jump_counter.py
+python pushups_tracker.py
 ```
 
 3. The processed video will be saved in the `VIDEOS/OUTPUTS` directory as `push-ups_counter.mp4`.
