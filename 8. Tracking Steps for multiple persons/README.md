@@ -1,7 +1,7 @@
 
-# Steps Counter with YOLO and Pose Estimation
+# Steps Counter with YOLO and MediaPipe Pose Estimation
 
-This project demonstrates the integration of YOLO object detection with MediaPipe Pose Estimation to count the number of steps taken by people in a video. The code detects human subjects using YOLOv8, applies pose estimation to track their movements, and counts steps based on the movement of ankle landmarks.
+This project demonstrates the integration of YOLO object detection with MediaPipe Pose Estimation to count the number of steps people take in a video. The code detects human subjects using YOLOv8, applies pose estimation to track their movements, and counts steps based on the movement of ankle landmarks.
 
 ![steps_counter](https://github.com/user-attachments/assets/1a26c027-00a0-46a7-8614-d0e27b0a494b)
 
@@ -67,7 +67,7 @@ The output video will be saved in `VIDEOS/OUTPUTS/steps_counter.mp4`.
 
 ### YOLO Object Detection
 
-The YOLOv8 model is used to detect and track objects in the video, specifically focusing on detecting `person` class instances. The bounding box for each person is used as the region of interest (ROI) for pose detection.
+The YOLOv8 model detects and tracks objects in the video, specifically focusing on detecting `person` class instances. The bounding box for each person is used as the region of interest (ROI) for pose detection.
 
 ### Pose Estimation
 
@@ -100,7 +100,7 @@ The video is annotated with the track ID and the corresponding step count for ea
  ┃ ┃ ┗ 📄 steps_counter.mp4   # Output video file
  ┣ 📄 utils.py                # Utility function to draw text with background on video
  ┣ 📄 PoseEstimationModule.py # MediaPipe pose detection module
- ┣ 📄 steps_counter.py        # Main script for step counting
+ ┣ 📄 steps_tracker.py        # Main script for step counting
  ┣ 📄 requirements.txt        # Dependencies
  ┗ 📄 README.md               # Project documentation
 ```
