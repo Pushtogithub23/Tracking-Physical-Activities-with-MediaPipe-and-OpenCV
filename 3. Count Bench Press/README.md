@@ -1,6 +1,6 @@
 # Bench Press Repetition Counter using MediaPipe's Pose Landmarks
 
-This project utilizes computer vision to count the number of bench press repetitions in a video using a pose estimation model. The program detects the position of key body landmarks (elbows and shoulders) and counts repetitions based on the movement of the elbow relative to the shoulder.
+Using a pose estimation model, this project utilizes computer vision to count the number of bench press repetitions in a video. The program detects the position of key body landmarks (elbows and shoulders) and counts repetitions based on the movement of the elbow relative to the shoulder.
 
 ![bench_press_counter](https://github.com/user-attachments/assets/43f4f218-7f08-47eb-a34b-e0fcaa01db61)
 
@@ -36,7 +36,7 @@ Ensure you also have the custom modules available in the project folder:
 ## How It Works
 
 1. The program reads the input video and uses a pose detection model to identify key landmarks such as the elbows and shoulders.
-2. It counts repetitions by detecting the movement of the elbow above and below the shoulder, indicating an up and down movement typical of a bench press.
+2. It counts repetitions by detecting the elbow movement above and below the shoulder, indicating an up-and-down movement typical of a bench press.
 3. The repetition count is displayed on the video in real-time, and the color changes based on the state:
    - Red for the "down" position (elbow below the shoulder).
    - Green for the "up" position (elbow above the shoulder).
@@ -52,7 +52,7 @@ Ensure you also have the custom modules available in the project folder:
  ┃ ┗ bench_press_counter.mp4  # Output video with rep counter
 📜 Pose_estimationModule.py   # Pose detection module
 📜 utils.py                   # Utility functions for text drawing
-📜 main.py                    # Main script for counting reps
+📜 count_bench_press.py                    # Main script for counting reps
 ```
 
 ## Usage
@@ -61,7 +61,7 @@ Ensure you also have the custom modules available in the project folder:
 2. Run the `main.py` script:
 
 ```bash
-python main.py
+python count_bench_press.py
 ```
 
 3. The program will process the video and generate an output file `bench_press_counter.mp4` in the `VIDEOS/OUTPUTS/` folder with the rep count overlay.
